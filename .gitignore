@@ -1,0 +1,14 @@
+venv/
+.env
+cloned/
+notes/
+
+tools/openSZZ/
+tools/pyszz_v2-master/
+tools/SZZUnleashed-adapted-master/
+tools/pyszz_v2-master.zip
+
+.DS_Store
+
+tools/open-szz.zip
+tools/szz-unleashed.zip

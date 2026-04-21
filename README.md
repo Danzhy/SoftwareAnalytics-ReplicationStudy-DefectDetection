@@ -1,135 +1,172 @@
-# Replication package
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5876817.svg)](https://doi.org/10.5281/zenodo.5876817)
-
-### [NOTE 1: For new studies involving PySZZ, please use the updated version of the tool (PySZZ v2)](https://github.com/grosa1/pyszz_v2)
-### [NOTE 2: The code used for the commit mining phase is available here](https://github.com/grosa1/bugfix-commits-miner)
-------------------
-
-## Evaluating SZZ Implementations Through a Developer-informed Oracle: Replication package
-
-- `analyzed_projects_all.csv` contains in CSV format the list of all cloned projects at the time of this study.
-    - `repo_name` is the repository name;
-    - `last_checkout` is the hash of the last commit available at the time of the clone, and;
-    - `date` is the date of the latest available commit.
-    
-- `detailed-database` is a folder containing the two complete datasets we defined.
-    - `overall.json` contains all the instances of our dataset (1,930);
-    - `language-filtered.json` contains 1,115 instances involving files in the following languages: C, Python, C++, JavaScript, Java, PHP, Ruby, and C#.
-    Both these datasets are JSON arrays. Each element has the following structure:
-        - `id` is a unique ID used during the construction phase, it is a univocal value for every entry;
-        - `repository` is the repository name as hosted in GitHub (owner/project-name);
-        - `fix` contains information about the fix, including:
-            - `commit`: meta-data about the commit, including:
-                - `hash`: commit hash;
-                - `message`: commit message;
-                - `author`: commit author;
-                - `url`: GitHub API URL with complete information about the commit;
-            - `files`: an array of files modified in the fix commit; each element provides:
-                - `name`: name of the modified file after the commit (this is not the complete path, just the file name);
-                - `old_path`/`new_path`: the path of the file before and after the commit;
-                - `lang`: extension of the file (indicating the programming language);
-                - `lines_added`/`lines_deleted`: lists of line numbers added/deleted;
-                - `change_type`: type of change (one of the following: "MODIFY"/"ADD"/"RENAME"/"DELETE");
-        - `bugs` contains the list of bug-inducing-commits for the fix; each element includes:
-            - `commit`: meta-data about the commit, including:
-                - `hash`: commit hash;
-                - `message`: commit message;
-                - `author`: commit author;
-                - `url`: GitHub API URL with complete information about the commit;
-            - `files`: an array of files modified in the fix commit; each element provides:
-                - `name`: name of the modified file after the commit (this is not the complete path, just the file name);
-                - `old_path`/`new_path`: the path of the file before and after the commit;
-                - `lang`: extension of the file (indicating the programming language);
-                - `lines_added`/`lines_deleted`: lists of line numbers added/deleted;
-                - `change_type`: type of change (one of the following: "MODIFY"/"ADD"/"RENAME"/"DELETE");
-        - `issue_urls` is a list of URLs of issues referenced in the fix commit;
-        - `earliest_issue_date` is the date of the earliest issue referenced in the fix commit (YYYY-MM-DDTHH:MM:SS);
-        - `best_scenario_issue_date` represents the date of an ideal issue reported for the bug; it is the date of the last bug-inducing commit incremented by 60 seconds (YYYY-MM-DDTHH:MM:SS).
-        
-- `json-input-raw` is a folder containing four datasets used as input for our experimentations, derived from `language-filtered.json`.
-    - `bugfix_commits_all.json` and `bugfix_commits_issues_only.json` contain 1,115 and 129 instances in JSON format, respectively. 
-    - `bugfix_commits_all_java.json` and `bugfix_commits_issues_only_java.json` contain 80 and 10 instances in JSON format, respectively.  
-    These datasets represent the input list of the selected fix commits and its relative list of bug-inducing commits, other than the following additional information used in our SZZ evaluation.
-        - `id` is a unique ID used during the construction phase, it is a univocal value for every entry;
-        - `repo_name` is the repository name as hosted in GitHub;
-        - `fix_commit_hash` is the commit's hash of the selected fix;
-        - `bug_commit_hash` is a list of bug-inducing commits;
-        - `earliest_issue_date` is a string containing the timestamp of the earliest issue (YYYY-MM-DDTHH:MM:SS);
-        - `best_scenario_issue_date` represents the date of an ideal issue reported for the bug; it is the date of the last bug-inducing commit incremented by 60 seconds (YYYY-MM-DDTHH:MM:SS);
-        - `issue_urls` is a list of URLs of issues referenced in the fix commit;
-        - `language` is a list of the programming languages of the files impacted by the fix commit.
-    
-- `cloned` is a placeholder folder where git repositories must be copied (or cloned) to replicate this work. See the instructions below.
-
-- `json-output-raw` is a folder containing a list of JSON files containing our pre-calculated results for each SZZ algorithm. 
-
-- `scripts` is a folder that contains all scripts created to post-process or analyze our data.
-
-- `tools` is a folder that contains a snapshot of developed codes.
-
-- `results` is a folder that contains all calculated metrics, such as Precision, Recall, F-measure, etc.
-
-## How to generate the pre-calculated results
-The following are the instructions needed to execute our suite of tools and generate our results. This example refers to the B-SSZ variant, but any other algorithm can be reproduced by changing the input arguments as detailed in the original guide. See `tools/pyszz.zip` for more instructions.
-
-- _Preparing input data._ As the first step you need to clone the git repository of every project. You can rely on the following approach.
-    - As an alternative, you can clone into `cloned` folder each repository and then checkout the list of commit's hashes contained in `analyzed_projects_all.csv` and `analyzed_projects_issues_only.csv`. This recreates the exact same conditions of our experiment. 
-
-- _Running SZZ._ [PySZZ](https://github.com/grosa1/pyszz_v2) (see `tools/pyszz.zip` for a replication snapshot, and check the reported URL for the latest version) is a free open-source suite of tools used to implement in Python all SZZ major variants.
-You can run a specific variant by passing a pre-defined `yml` file or experiment with custom inputs. E.g., `conf/bszz.yml` activates B-SZZ variant.
-
-``python3 main.py json-input-raw/bugfix_commits_all.json conf/bszz.yml cloned`` runs B-SZZ algorithm.
-
-Where:
- - `json-input-raw/bugfix_commits_all.json` is the input list of fixes;
- - `conf/bszz.yml` is a pre-defined list of settings used to activate a specific variant (see `tools/pyszz.zip` for more details);
- -  `cloned` is the folder containing a list of pre-cloned repositories.
+# SZZ replication (ICSE 2021)
 
 
-NOTE. SZZUnleashed and OpenSZZ are not part of PySZZ suite. We adapted the original implementations to our input formats.
-- The [SZZUnleashed](https://github.com/wogscpar/SZZUnleashed) implementation has been forked to handle our input formant and add parallel support [SZZUnleashed-adapted
-](https://github.com/intersimone999/SZZUnleashed-adapted) (See `tools/szz-unleashed.zip` as a snapshot of our adapter)
-- The [OpenSZZ](https://github.com/clowee/OpenSZZ) implementation has been forked to exclude the Jira filter [OpenSZZ](https://github.com/lucapascarella/OpenSZZ) (See `tools/open-szz.zip` as a snapshot of our adapter) 
-OpenSZZ needs post-processing to adapt the generated results to our JSON format. See below _OpenSZZ post-processing script_
 
-Both snapshots `tools/szz-unleashed.zip` and `tools/open-szz.zip` contain the instructions to use our adapters. 
+# 3. Setup Instructions
 
-## Post-processing for issue date filtering
-`json-output-raw` contains a list of JSON files generated by each SZZ variant.
+All commands below assume you are running from the project root, e.g.:
 
-Specifically, `bic_<algorithm-name>_bugfix_commits_all.json` and `bic_<algorithm-name>_bugfix_commits_issues_only.json` refer to the output of `<algorithm-name>` SZZ variant.
-Instead, `bic_<algorithm-name>_bugfix_commits_all-filter.json` and `bic_<algorithm-name>_bugfix_commits_issues_only-filter.json` is the post-filtered output when the filter on issue data is applied.
+```bash
+cd "/path/to/<project_root>"
+```
 
-We use `ruby postfilter.rb <json-output> <cloned>` to post-process `bic_<algorithm-name>_bugfix_commits_all.json` and `bic_<algorithm-name>_bugfix_commits_issues_only.json` and generate `bic_<algorithm-name>_bugfix_commits_all-filter.json` and `bic_<algorithm-name>_bugfix_commits_issues_only-filter.json`, as a reduced list of datapoints filter by issue's date.
-- `postfilter.rb` is our ruby script used to parse the output of any SZZ algorithm to filter out BIC commits that do not respect the issue date condition.
-- `<json-output>` is the input folder containing the list of JSON files produced by PySZZ;
-- `<cloned>` is the path to the pre-cloned (or checked out) repositories.
+## Prerequisites
 
-## Recall, Precision, F-measure, and Overlap
+- macOS or Linux (tested on macOS 25.4).
+- Python 3.10.x (project tested with 3.10.19).
+- Git 2.23 or newer on `PATH`.
+- Ruby 
+- `srcml` on `PATH` (<https://www.srcml.org>). PySZZ v2 (a tool to run SZZ algorithms) checks for it at startup even for variants that don't use it.
+- A GitHub personal access token with read-only repo scope. It goes into a `.env` file and is used by the cloning scripts to avoid the 60 req/h anonymous rate limit.
+- Around 50 GB of free disk space if you plan to run the full clone of all 951 repositories. Running only the subset clone needs much less.
 
-`overlap.py` is a Python script with embedded input paths that can be used to calculate Recall, Precision, F-measure, and overlap.
-You may need to adapt `base_path` global variable to point to your result's directory. E.g., `base_path = "json-output-raw/"` analyzes the study's results.
+## One-time setup
 
-This tool produces:
+```bash
+python3.10 -m venv venv
+source venv/bin/activate          # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-- `<dataset>-recall-precision.csv` lists Precision, Recall, F-measure, total number of correct instances (our oracle), and total number of identified instances;
- - `<dataset>-overlap_vi_vj.csv` lists the overlap, the total number of BIC uniquely identified, the total number of correctly identified, and the union of all BIC correctly identified by all models;
-- `<dataset>-overlap_vi_but_others.csv` is a CSV version of the heatmap for the overlap comparison.
-- `<dataset>-not-identified.csv` summarizes the not found BICs;
+Create a `.env` file in the project root containing your GitHub token:
 
-- `<dataset>-heatmap.pdf` as reported in the manuscript.
-- `wrong` is a subfolder with a list of CSV files containing the wrongly identified BIC with a link to GitHub FIX commit.
+```
+GITHUB_TOKEN=<your_token>
+```
 
-### OpenSZZ post-processing script
+The `cloned/` folder is gitignored (see [.gitignore](.gitignore)) and you do not need to create it by hand. Both `repo_cloner.py` and `subset_repo_cloner.py` create it on first run. If a previous partial run left stale folders inside it, `subset_repo_cloner.py` will `rm -rf` and re-clone each repo in its subset anyway.
 
-OpenSZZ produces three files for each analyzed instance. E.g., `AIFDR_inasafe_BugFixingCommit.csv`, `AIFDR_inasafe_BugInducingCommits.csv`, and `AIFDR_inasafe.txt`.
+## Getting the repositories
 
-To transform all these CSV files in a single JSON file compatible to `overlap.py` we create a small script `openszz_file_refactoring.py`.
+There are two paths. Most people should take Path B.
 
-`python3 openszz_file_refactoring.py <oracle> <openszz-issue> <bic_open_bugfix_commits_issues_only.json>`
+**Path A (full clone, ~4 hours, ~48 GB).** This clones every repository referenced in [data/json-input-raw/bugfix_commits_all.json](data/json-input-raw/bugfix_commits_all.json), filters down to those that cloned successfully, samples 10 entries with seed 42, and re-clones that sample with an attached HEAD:
 
-Where:
- - `<oracle>` is the list of fixes. E.g., `json-input-raw/bugfix_commits_all.json`;
- - `<openszz-issue>` is the folder path where openSZZ produces its results;
- - `<bic_open_bugfix_commits_issues_only.json>` is the destination file output where to store in JSON format openSZZ bug-inducing commits;
+```bash
+python scripts/repo_cloner.py
+python scripts/commits_filter.py \
+  --input  data/json-input-raw/bugfix_commits_all.json \
+  --output logs/bugfix_commits_all_filtered.json
+python scripts/make_subset.py \
+  --input  logs/bugfix_commits_all_filtered.json \
+  --output logs/bugfix_commits_subset.json \
+  --size 10 --seed 42
+python scripts/subset_repo_cloner.py \
+  --subset logs/bugfix_commits_subset.json \
+  --log    logs/subset_clone_log.csv
+```
+
+Repeat the filter / sample / subset-clone trio for the issues-only dataset, swapping the input file:
+
+```bash
+python scripts/commits_filter.py \
+  --input  data/json-input-raw/bugfix_commits_issues_only.json \
+  --output logs/bugfix_commits_issues_only_filtered.json
+python scripts/make_subset.py \
+  --input  logs/bugfix_commits_issues_only_filtered.json \
+  --output logs/bugfix_commits_issues_only_subset.json \
+  --size 10 --seed 42
+python scripts/subset_repo_cloner.py \
+  --subset logs/bugfix_commits_issues_only_subset.json \
+  --log    logs/subset_issues_only_clone_log.csv
+```
+
+**Path B (recommended, ~10 minutes).** The two subset JSONs are already committed under [logs/bugfix_commits_subset.json](logs/bugfix_commits_subset.json) and [logs/bugfix_commits_issues_only_subset.json](logs/bugfix_commits_issues_only_subset.json). Skip the full clone and just run the two subset clones directly:
+
+```bash
+python scripts/subset_repo_cloner.py \
+  --subset logs/bugfix_commits_subset.json \
+  --log    logs/subset_clone_log.csv
+python scripts/subset_repo_cloner.py \
+  --subset logs/bugfix_commits_issues_only_subset.json \
+  --log    logs/subset_issues_only_clone_log.csv
+```
+
+Either way, you end up with partial (blobless) clones in `cloned/<owner>/<repo>/` whose HEAD is attached to a local branch `pyszz-work` at the pinned commit from `analyzed_projects_all.csv`. PySZZ v2 requires the attached HEAD;
+
+## Installing PySZZ v2
+
+PySZZ v2 is not present in this repo — you need to put it under `tools/pyszz_v2-master/`. Either clone the repo indicated in [tools/pyszz.txt](tools/pyszz.txt):
+
+```bash
+cd tools
+git clone https://github.com/grosa1/pyszz_v2 pyszz_v2-master
+cd ..
+```
+
+Or download a zip, put it in `tools/`, and unzip it so that the resulting folder is `tools/pyszz_v2-master/` with `main.py` directly inside.
+
+PySZZ has its own Python dependencies but they are already present in the top-level [requirements.txt](requirements.txt), so the `pip install` in the previous section already covers them.
+
+## Running the SZZ variants
+
+All four variants read the same subset JSON. The paths below are given relative to `tools/pyszz_v2-master/`, which is how PySZZ expects to be invoked.
+
+```bash
+cd tools/pyszz_v2-master
+
+python3 main.py ../../logs/bugfix_commits_subset.json conf/bszz.yml  ../../cloned
+python3 main.py ../../logs/bugfix_commits_subset.json conf/agszz.yml ../../cloned
+python3 main.py ../../logs/bugfix_commits_subset.json conf/lszz.yml  ../../cloned
+python3 main.py ../../logs/bugfix_commits_subset.json conf/maszz.yml ../../cloned
+```
+
+Then do the same against the issues-only subset:
+
+```bash
+python3 main.py ../../logs/bugfix_commits_issues_only_subset.json conf/bszz.yml  ../../cloned
+python3 main.py ../../logs/bugfix_commits_issues_only_subset.json conf/agszz.yml ../../cloned
+python3 main.py ../../logs/bugfix_commits_issues_only_subset.json conf/lszz.yml  ../../cloned
+python3 main.py ../../logs/bugfix_commits_issues_only_subset.json conf/maszz.yml ../../cloned
+
+cd ../..
+```
+
+Each run writes a timestamped file under `tools/pyszz_v2-master/out/`, e.g. `bic_bszz_1776802225.json`. Eight runs produce eight output files — four per scenario.
+
+## Collecting and renaming the outputs
+
+[scripts/overlap.py](scripts/overlap.py) reads from `data/out/` with a fixed naming template (see its `model_list_*` blocks). Move the eight files from `tools/pyszz_v2-master/out/` into `data/out/` and rename them to:
+
+```
+data/out/bic_b_bugfix_commits_all.json
+data/out/bic_ag_bugfix_commits_all.json
+data/out/bic_l_bugfix_commits_all.json
+data/out/bic_ma_bugfix_commits_all.json
+data/out/bic_b_bugfix_commits_issues_only.json
+data/out/bic_ag_bugfix_commits_issues_only.json
+data/out/bic_l_bugfix_commits_issues_only.json
+data/out/bic_ma_bugfix_commits_issues_only.json
+```
+
+We advise moving and renaming the four files as soon as one scenario (either `all` or `issues_only`) finishes, before starting the next scenario. That way you won't mix the two scenarios up among the timestamped filenames in `tools/pyszz_v2-master/out/`.
+
+## Applying the issue-date filter
+
+scripts/postfilter.rb removes inducing commits whose commit date is after the linked issue date and writes a `.issue-filter.json` sibling next to every input JSON. It takes two arguments: the directory with the SZZ output JSONs and the directory containing the cloned repositories.
+
+```bash
+ruby scripts/postfilter.rb data/out/ cloned/
+```
+
+Run this once after all eight files are in place and renamed. It creates the eight corresponding `bic_*.issue-filter.json` files in `data/out/`. Files where no entry has an issue date are skipped with a warning, which is expected.
+
+## Generating the metrics and heatmaps
+
+scripts/overlap.py writes its outputs to `out/` and `out/wrong/`. Create those two folders once.
+
+```bash
+mkdir -p out/wrong
+python scripts/overlap.py
+```
+
+For each of the four prefixes (`all-`, `all-filter-`, `issue-only-`, `issue-only-filter-`) the script produces:
+
+- `out/<prefix>recall-precision.csv` — Table VI numbers (Precision, Recall, F1).
+- `out/<prefix>overlap_vi_vj.csv` and `out/<prefix>heatmap.pdf` — Fig. 3 / Fig. 4 data.
+- `out/<prefix>overlap_vi_but_others.csv` and `out/<prefix>not-identified.csv`.
+- `out/wrong/<prefix><model>-wrongly_identified.csv` per model.
+
+## Notes and caveats
+
+We evaluate on a 10-commit subset per scenario rather than the ~847-commit filtered set. The short reason is disk space (~50 GB already spent on partial clones, with limited room for PySZZ's per-commit temporary copies) and wall-clock time (a single SZZ variant over the full set would take several hours to a day, and the study requires running four of them, twice).

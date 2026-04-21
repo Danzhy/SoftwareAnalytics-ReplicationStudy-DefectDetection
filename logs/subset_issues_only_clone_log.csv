@@ -1,0 +1,10 @@
+repo_name,status,reason,elapsed_s
+GMOD/jbrowse,success,,16.60
+OSGeo/gdal,success,,82.48
+OpenSIPS/opensips,success,,26.96
+atari800/atari800,success,,5.34
+chrisforbes/mesa,success,,84.86
+cosmocode/dokuwiki-plugin-struct,success,,3.96
+qt/qtbase,success,,165.30
+spring-projects/spring-boot,success,,87.39
+systopia/de.systopia.signatures,success,,2.98

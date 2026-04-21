@@ -1,0 +1,952 @@
+repo_name,status,reason,elapsed_s
+ARMmbed/mbed-ls,success,,4.01
+6WIND/os-vif-plugin-vhostuser-fp,success,,5.23
+4awpawz/trio,success,,7.19
+01org/gbs,success,,13.49
+Agbar/enigma-optima,success,,16.30
+AnthonyARM/devlib,success,,26.25
+AdrianVasiliu/delite,success,,26.43
+Arkq/bluez-alsa,success,,23.96
+BenzoRoms/packages_providers_TelephonyProvider,success,,6.31
+BBBSnowball/offlineimap-couch,success,,6.76
+ANNarchy/ANNarchy,success,,34.83
+Bioconductor/BBS,success,,12.09
+Bioconductor/Rsamtools,success,,13.55
+0lvin/yquake2,success,,47.42
+BrightcoveOS/Diamond,success,,8.04
+CESARBR/knot-modbus-source,success,,3.94
+BrainsOnBoard/bob_robotics,success,,24.73
+Cibiv/IQ-TREE,success,,78.57
+AntiTcb/Discord.Net,success,,133.34
+CCI/cci,success,,98.80
+CisBetter/ags,success,,31.84
+Cloudrexx/cloudrexx,clone_failed,remote: Repository not found.,0.70
+CodeOnRye/tevatron,success,,29.89
+Collaborne/kubernetes-aws-resource-service,success,,11.96
+BrentBaccala/sage,success,,275.24
+CyberLinkCorp/ijkplayer,success,,27.80
+DanVanAtta/triplea,clone_failed,remote: Repository not found.,0.74
+Amebis/eduVPN,success,,342.92
+AIFDR/inasafe,success,,346.40
+Demon000/classroom-booking,success,,2.86
+DerrickWood/kraken,success,,6.41
+DeuxHuitHuit/cache_management,success,,4.85
+CindyJS/CindyJS,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),236.39
+DistAlgo/distalgo,success,,5.51
+Distrotech/gstreamer,success,,24.29
+Dyalog/ride,success,,12.14
+DigitalPebble/storm-crawler,success,,56.53
+EdinburghNLP/nematus,success,,19.63
+Enalean/tuleap,clone_failed,remote: Repository not found.,0.76
+EnterpriseDB/pg_catcheck,success,,4.58
+DynamoRIO/dynamorio,success,,69.96
+FZ69617/WME-ja,success,,4.76
+Fahrradflucht/vcp-hamburg-theme,success,,203.80
+Fishrock123/fs-sink,success,,3.09
+DaveMielke/liblouis,success,,368.63
+DemocracyClub/yournextrepresentative,success,,366.68
+FlinchyMcFlincherson/TVCOG_Seltzer,success,,18.71
+FluidTYPO3/vhs,success,,11.79
+FluidSynth/fluidsynth,success,,17.40
+ARM-software/workload-automation,success,,725.48
+FlyingSixtySix/Pxls,success,,11.27
+ArduPilot/ardupilot,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),724.49
+Frosticles/embann,success,,5.55
+Freeyourgadget/Gadgetbridge,success,,56.31
+GNOME/gnome-builder,success,,71.59
+GMOD/jbrowse,success,,79.14
+CyanogenMod/android_frameworks_base,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),607.00
+GNOME/pybliographer,clone_failed,remote: Repository not found.,0.79
+GNOME/gnome-shell,success,,50.34
+Grauniad/elf-2-link,success,,4.78
+GothenburgBitFactory/timewarrior,success,,30.37
+H-uru/libhsplasma,success,,53.53
+AsherBond/qemu,clone_failed,timeout after 900s,900.02
+Hoikas/LegacyWindow,success,,5.37
+Automattic/wp-calypso,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),920.26
+I2SE/eagle-bom.py,success,,4.95
+INN/super-cool-ad-inserter-plugin,success,,7.26
+CTSRD-CHERI/llvm-project,clone_failed,timeout after 900s,900.03
+Chairshot215/android_kernel_lge_hammerhead-starship,clone_failed,timeout after 900s,900.01
+Ichimonji10/pulp-smash,clone_failed,remote: Repository not found.,0.73
+I2PC/scipion,success,,101.05
+Hasimir/Limnoria,success,,117.79
+InfernoEmbedded/owfs,success,,17.73
+ClangBuiltLinux/linux,clone_failed,timeout after 900s,900.01
+Ignia/Topics-Library,success,,95.86
+ImageEngine/cortex,success,,100.77
+JeanFred/wikiloves,success,,8.81
+IronTeaPot/react-native-charts-wrapper,success,,16.96
+GNOME/mutter,success,,304.37
+JetBrains/xodus,success,,134.14
+JoeMcEwen/FAST-PT,success,,11.93
+Jeavon/Umbraco-CMS,success,,263.69
+JonnyJD/musicbrainz-isrcsubmit,success,,5.54
+INRIA/spoon,success,,392.03
+FreeRADIUS/freeradius-server,success,,630.16
+Josko/aura-bot,success,,47.85
+FFmpeg/FFmpeg,checkout_failed,checkout: error: RPC failed; curl 56 Recv failure: Connection reset by peer,970.65
+Kasukoi/eisverkauf,clone_failed,remote: Repository not found.,1.30
+IntelliTect/Coalesce,success,,497.70
+JuliaLang/julia,success,,240.89
+Kattis/problemtools,success,,45.46
+GNOME/gtk,success,,828.93
+Kinetic/kinetic-c,success,,54.16
+ImageEngine/gaffer,success,,651.16
+KDE/kphotoalbum,success,,323.51
+LSTS/dune,success,,42.82
+GreyLeshy/android_kernel_sony_msm8994_kitakami,clone_failed,timeout after 900s,900.01
+GNOME/gimp,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),1093.37
+KDE/kwin,success,,467.68
+Lodifice/mfnf-pdf-export,success,,19.83
+Katello/katello,success,,433.46
+Lusitanian/PHPoAuthLib,success,,4.70
+MITLibraries/QuickSubmit,success,,4.01
+MacGyver-NRW/oc-server3,success,,73.22
+LumaPictures/pymel,success,,117.39
+JetBrains/MPS,clone_failed,timeout after 900s,900.01
+JetBrains/intellij-community,clone_failed,timeout after 900s,900.01
+MarcoFavorito/flloat,success,,5.99
+Jonathan-Ferguson/Quagga,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),733.90
+Kitware/VTK,success,,358.45
+Marty-D/Pokemon-Showdown,success,,30.10
+LivelyKernel/LivelyKernel,success,,269.75
+Matthimatiker/Erfurt,success,,16.52
+Miciah/openshift-extras,success,,12.92
+NFFT/nfft,success,,25.58
+NateWr/simple-admin-pages,success,,4.15
+NathanHandley/TrinityCore,clone_failed,remote: Repository not found.,0.82
+MythTV/mythtv,success,,147.55
+MaTriXy/Paginize,success,,327.79
+NightWhistler/PageTurner,success,,42.15
+MaddTheSane/qemu,success,,275.67
+LibreOffice/core,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),529.06
+NREL/ssc,success,,229.38
+OPM/ewoms,success,,117.10
+LineageOS/android_kernel_samsung_apq8084,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),615.63
+ManifoldScholar/manifold,success,,385.21
+ManageIQ/manageiq,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),403.86
+OSGeo/gdal,success,,151.78
+OpenFastPath/ofp,success,,90.12
+KiCad/kicad-source-mirror,clone_failed,timeout after 900s,900.01
+OpencachingDeutschland/oc-server3,success,,36.75
+Kitware/ParaView,clone_failed,timeout after 900s,900.01
+NostalriusReborn/Core,checkout_failed,checkout: error: RPC failed; curl 56 Recv failure: Connection reset by peer,361.00
+Oslandia/labelconnector,success,,13.44
+Otiel/BandcampDownloader,success,,14.42
+OpenSIPS/opensips,success,,142.54
+OpenSC/OpenSC,success,,220.42
+Ownasaurus/TAStm32,success,,69.60
+OKaluza/LavaVu,success,,454.00
+PhenotypeFoundation/GSCF,success,,50.50
+POV-Ray/povray,success,,158.62
+PierreRaybaut/guiqwt,success,,34.98
+Plaristote/crails,success,,19.76
+Perl/perl5,success,,173.14
+ProgVal/Limnoria,success,,23.49
+PreibischLab/BigStitcher,success,,60.36
+PmagPy/PmagPy,success,,97.64
+Redmaner/MiCore_kernel_aries,clone_failed,remote: Repository not found.,0.84
+Rela-X/rlang,success,,3.05
+RequestPolicyContinued/requestpolicy,success,,10.46
+MicroVirus/7kaa,checkout_failed,checkout: timeout after 900s,903.11
+OctaForge/OF-Engine,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),582.17
+OMAP4-AOSP/android_kernel_samsung_espresso,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),729.28
+NickleDave/vak,checkout_failed,checkout: timeout after 900s,906.46
+Quipyowert2/rocksndiamonds,success,,158.73
+PyBossa/pybossa,success,,211.59
+Rsl1122/Plan-PlayerAnalytics,success,,165.55
+Rudd-O/zfs,success,,188.98
+Rockbox/rockbox,success,,234.45
+SELinuxProject/selinux,success,,62.43
+OpenChannelSSD/linux,clone_failed,timeout after 900s,900.01
+OpenMS/OpenMS,clone_failed,error: RPC failed; curl 56 Recv failure: Connection reset by peer,884.77
+Opentrons/opentrons,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),753.76
+Sharpie/vagrant-pe_build,success,,6.15
+Runalyze/Runalyze,success,,313.21
+RobbertProost/qtbase,success,,407.12
+SirMaximilian/snickerdoodle-linux,clone_failed,remote: Repository not found.,0.82
+SchizoDuckie/DuckieTV,success,,87.92
+SirCmpwn/sway,success,,47.24
+Slowvoice/ui-select,success,,4.78
+SimpleServer/SimpleServer,success,,85.56
+Sable/soot,success,,260.25
+SonMinWoo/AnsanBladeWind,success,,47.32
+Spine-project/Spine-Database-API,success,,17.75
+PKRoma/linux,clone_failed,timeout after 900s,900.01
+SupunArunoda/CPACEP,success,,7.88
+SchedMD/slurm,success,,268.94
+Spiralis/hobo,success,,103.31
+PeterHuewe/linux-tpmdd,clone_failed,timeout after 900s,900.01
+TheHolyWaffle/TeamSpeak-3-Java-API,success,,8.18
+RhenaudTheLukark/CreateYourFrisk,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),712.63
+SwartzCr/privacybadgerchrome,success,,140.14
+SmartApplicationUnipi/Smart_ELF,success,,341.60
+TravelMapping/Web,success,,12.78
+SoftwareHeritage/swh-web,success,,364.63
+TheBlueMatt/bitcoin,success,,205.60
+UiL-OTS-labs/iSpector,success,,10.79
+Tinob/Ishiiruka,success,,226.40
+SAP/openui5,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),777.42
+Subsurface-divelog/subsurface,success,,390.04
+Sarjuuk/aowow,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),656.59
+Wadeck/gitlab-oauth-plugin,success,,3.57
+WebDevJLProjectsOrg/FrameworkMvc,success,,5.63
+Wen-Han/pyVisOS,success,,6.98
+SVB22/kernel_lenovo_msm8953,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),826.74
+YunoHost/SSOwat,success,,44.41
+TypeCobolTeam/TypeCobol,success,,316.55
+Zeex/sampgdk,clone_failed,remote: Repository not found.,0.86
+VanirAOSP/frameworks_av,success,,213.60
+ZuBB/ash,success,,6.72
+abhayagiri/abhayagiri-website,success,,69.47
+Tragetaschen/linux-stable-pconxs,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),549.78
+ad510/decoherence,success,,22.78
+Taapat/enigma2-openpli-vuplus,success,,676.02
+UniTime/unitime,success,,453.95
+adai/LTLMoP,success,,19.86
+adrienverge/localstripe,success,,6.53
+aexmod-tmp/kernel_oneplus_sdm845,clone_failed,remote: Repository not found.,1.00
+adulau/cve-search,success,,5.53
+ahobson/ruby-pcap,success,,4.78
+abarisain/dmix,success,,212.07
+afrjorge/cdf,success,,53.98
+akabaev/qemu-bsd-user,success,,57.75
+Unvanquished/Unvanquished,success,,542.58
+acmepjz/meandmyshadow,success,,245.80
+aldryn/aldryn-locations,success,,4.66
+alegonz/baikal,success,,4.29
+alexeicolin/glogg,success,,6.11
+alliedtelesis/netmap,success,,25.30
+allo-/django-bingo,success,,4.58
+amirmikhak/3D-GIF,success,,9.12
+TobleMiner/linux-pinebook-pro,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),834.20
+analogdevicesinc/libiio,success,,10.64
+andrejb/leap_mx,success,,4.01
+akhayrutdinov/pentaho-platform-plugin-common-ui,success,,106.25
+andrewphorn/ClassiCube-Client,success,,7.01
+aiidateam/aiida_core,success,,216.47
+TrinityCore/TrinityCore,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),741.33
+alecjohnson/iPic3D,success,,153.49
+anitazha/systemd,success,,105.37
+Zarel/Pokemon-Showdown,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),646.08
+ajaxorg/ace,success,,453.93
+SlimRoms/kernel_htc_flounder,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),1408.75
+apinstein/git-deployment,success,,4.29
+Whissi/linux-stable,clone_failed,timeout after 900s,900.01
+aqbanking/aqbanking,success,,28.07
+aragon/aragon-ui,clone_failed,remote: Repository not found.,0.87
+adamretter/exist,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),599.32
+ariatemplates/ariatemplates,success,,15.41
+arcan1s/awesome-widgets,success,,34.26
+arista-eosplus/ztpserver,success,,4.70
+arimah/condict,success,,10.03
+arobert01/RTK,success,,23.28
+artus-analysis/Artus,success,,39.49
+asciimoo/searx,success,,13.19
+apache/thrift,success,,191.50
+ankitects/anki,success,,471.55
+astro313/uvmcmcfit,success,,48.59
+aschuster3/Team2-Spring-2015-Capstone,success,,105.15
+atari800/atari800,success,,30.52
+aviaryan/PopularMovies,success,,4.14
+avocado-framework/avocado,success,,33.44
+Unidata/IDV,checkout_failed,checkout: timeout after 900s,1218.97
+baob/submit-this,success,,7.08
+awslabs/amazon-kinesis-video-streams-webrtc-sdk-c,success,,55.35
+asterisk/asterisk,success,,182.69
+benoitc/gunicorn,success,,19.53
+android/platform_development,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),628.74
+antirez/redis,success,,558.57
+biola/chef-bacula-backup,clone_failed,remote: Repository not found.,0.89
+aws/aws-cli,success,,126.64
+berhoden/ember.js,success,,58.26
+barthisius/dopey,success,,127.89
+blblack/gdnsd,clone_failed,remote: Repository not found.,1.01
+bkaradzic/imgui,success,,129.17
+biolab/orange3,success,,178.89
+apache/mesos,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),616.01
+bluemaex/node-dmx,clone_failed,remote: Repository not found.,0.81
+bminor/mesa-mesa,clone_failed,remote: Repository not found.,1.44
+bminor/musl,clone_failed,remote: Repository not found.,1.33
+bmorel/ValyriaTear,clone_failed,remote: Repository not found.,1.00
+bmr-cymru/boom,success,,16.07
+analogdevicesinc/linux,clone_failed,timeout after 900s,900.02
+bonaime/seedlink_plotter,success,,10.05
+bookbrainz/bookbrainz-site,success,,16.19
+andrewrk/zig,clone_failed,timeout after 900s,900.01
+breunigs/hipsterpizza,success,,6.43
+brendancsmith/optimal-buy-gdax,success,,42.20
+apache/bookkeeper,clone_failed,timeout after 900s,900.08
+brunoseivam/ADCore,success,,38.18
+bravewick/Reload,success,,168.56
+brummer10/guitarix,success,,117.74
+buschtoens/ember-route-task-helper,success,,15.56
+bwesterb/mirte,success,,7.82
+camunigeog/muscat-conversion,success,,5.78
+benpicco/RIOT,success,,454.72
+caleb531/connect-four,success,,12.70
+cdanis/intensify.pictures,success,,3.33
+catsop/CATMAID,success,,22.27
+apple/swift,success,,810.65
+ceph/teuthology,success,,23.33
+cerisola/ising,success,,4.50
+bgermann/graphite,success,,501.52
+chadcatlett/brew,clone_failed,remote: Repository not found.,0.83
+cfoellmann/black-studio-tinymce-widget,success,,8.88
+catmaid/CATMAID,success,,92.95
+cheminfo-js/molecular-formula,success,,12.38
+cheshire3/archiveshub,success,,8.52
+chadversary/piglit,success,,64.37
+chneukirchen/rack,success,,6.26
+chris2511/xca,success,,10.93
+chrisallenlane/novahot,success,,3.43
+bitcoin/bitcoin,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),590.40
+audacity/audacity,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),736.76
+christ66/git-plugin,success,,4.22
+blp/ovs-reviews,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),513.17
+cheton/cnc,success,,170.17
+bloomberg/salt,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),558.62
+citizenfx/fivem,success,,166.42
+cmus/cmus,success,,10.05
+cmassiot/upipe,success,,119.05
+codemirror/CodeMirror,success,,8.31
+codinguser/gnucash-android,success,,8.67
+brianchandotcom/liferay-portal,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),606.07
+chrismaltby/gb-studio,success,,290.93
+computationalcore/smartcoins-wallet,success,,17.45
+commsy/commsy,success,,40.06
+coreos/grub,success,,29.60
+blinken/paradar,checkout_failed,checkout: timeout after 900s,902.37
+contao/contao,success,,68.96
+craigbarnes/dte,success,,15.66
+cosmocode/dokuwiki-plugin-struct,success,,72.44
+crimsonthunder/Crystal_Kernel_OP6T,clone_failed,remote: Repository not found.,0.86
+creesch/reddit-moderator-toolbox,success,,12.55
+cfinucane/LTLMoP,success,,545.63
+bvanassche/net-snmp,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),633.15
+crobinso/libvirt,success,,126.74
+clips/pattern,success,,395.68
+cyroxx/EvaP,success,,7.26
+chrisforbes/mesa,success,,558.38
+danhammer/pif-updates,success,,5.77
+curoverse/arvados,success,,59.84
+clebertsuconic/activemq-artemis,success,,499.33
+curl/curl,success,,151.54
+cheiter/CRPropa3-data,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),739.56
+dansgithubuser/dlal,success,,87.73
+datamapper/do,success,,7.28
+daylightstudio/FUEL-CMS,success,,10.49
+dbarrosop/wee-slack,success,,20.37
+dedan/DrosCalciumAnalyse,success,,3.64
+ceph/ceph,clone_failed,timeout after 900s,900.02
+devsnd/cherrymusic,success,,11.42
+deltanet/adapt-cover-menu-audio,success,,38.36
+diegoberaldin/MetaTerm,checkout_failed,fetch: fatal: remote error: upload-pack: not our ref f04f58982855b65cb1ca85c2c6d0d228e5ff5636,2.71
+diffplug/goomph,success,,42.84
+cyrusimap/cyrus-imapd,success,,302.99
+divdavem/attester,success,,6.10
+code-saturne/code_saturne,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),799.23
+dmajda/pegjs,success,,57.89
+djarecka/nipype,success,,248.68
+darktable-org/darktable,checkout_failed,checkout: error: RPC failed; curl 56 Recv failure: Connection reset by peer,462.45
+docwyatt2001/babeld,success,,44.88
+crate/crate,clone_failed,error: RPC failed; curl 56 Recv failure: Connection reset by peer,791.59
+doe300/jactiverecord,success,,7.52
+donSchoe/shoutcast-irc,success,,3.21
+doktordirk/router,success,,7.23
+dnk/mate-panel,success,,117.80
+dials/dials,success,,428.40
+dnouri/deform,success,,108.32
+drf-forms/drf-schema-adapter,success,,7.14
+drzax/wp-footnotes,success,,3.71
+dscho/busybox-w32,success,,26.60
+danielfalck/FreeCAD,success,,706.46
+duncanmmacleod/gwpy,success,,17.22
+duojs/pack,success,,3.91
+dougbinks/glfw,success,,139.70
+danielhb/libvirt,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),739.52
+ebi-ait/hca-util,success,,3.44
+ctu-geoforall-lab-projects/dp-pesek-2018,checkout_failed,checkout: timeout after 900s,902.34
+edoapra/simint-generator,success,,6.52
+danmar/cppcheck,checkout_failed,checkout: error: RPC failed; curl 56 Recv failure: Operation timed out,749.93
+efferifick/CMPUT404-project-socialdistribution,success,,8.75
+duplicati/duplicati,success,,96.12
+dirkhh/subsurface,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),617.33
+ejurgensen/forked-daapd,success,,83.39
+crossminer/scava,checkout_failed,checkout: timeout after 900s,1143.60
+embree/embree,success,,96.61
+emutos/emutos,success,,259.27
+ericmann/wordpress-redis-backend,success,,3.51
+erbridge/openssl,success,,251.22
+efiring/matplotlib,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),516.48
+eskalon/ProjektGG,success,,88.37
+e-mission/e-mission-phone,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),671.10
+driftyco/ionic,success,,813.57
+eugenemel/maven_core,success,,33.49
+erlang/otp,success,,210.77
+exafmm/exafmm,success,,5.73
+cpaasch/mptcp,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),1732.25
+dorimanx/DORIMANX_LG_STOCK_LP_KERNEL,clone_failed,timeout after 900s,900.01
+fau-fablab/kastenwesen,success,,3.94
+federicomariamassari/willow-tree,success,,3.99
+facebook/stetho,success,,14.89
+dradis/dradisframework,checkout_failed,checkout: timeout after 900s,917.51
+fertrist/mishpaha-project-backend,success,,50.25
+dspindle/linux,clone_failed,timeout after 900s,900.01
+firebase/firepad,success,,21.90
+fishman/ctags,success,,19.51
+fgenesis/mangos,success,,104.96
+flame/blis,success,,37.87
+fgast/opensips,success,,130.91
+ether/etherpad-lite,success,,249.04
+floodlight/oftest,success,,5.46
+fish-shell/fish-shell,success,,83.96
+fmarier/browserid-tools,success,,3.04
+edx/edx-platform,success,,869.05
+ejaku/grgen,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),846.36
+fratajczak/21sh,clone_failed,remote: Repository not found.,1.24
+freedesktop/cairo,clone_failed,remote: Repository not found.,0.89
+freedesktop/drm-tip,clone_failed,remote: Repository not found.,0.85
+freedesktop/ezbench,clone_failed,remote: Repository not found.,0.82
+fortyninemaps/karta,success,,9.77
+freedesktop/libreoffice-core,clone_failed,remote: Repository not found.,0.95
+freedesktop/spice-html5,clone_failed,remote: Repository not found.,1.51
+fossfreedom/coverart-browser,success,,129.58
+fritzmg/hugo-theme-learn,success,,22.11
+flyinghead/flycast,success,,162.40
+fuel/core,success,,16.67
+freedreno/mesa,success,,181.57
+flavioamieiro/AlertaDengue,checkout_failed,checkout: error: RPC failed; curl 56 Recv failure: Connection reset by peer,211.95
+fwupd/fwupd,success,,27.17
+g76r/libqtssu,success,,10.45
+f-droid/fdroidserver,success,,412.97
+facebook/react,success,,426.61
+gallery/gallery3,success,,22.14
+fluent/fluent-bit,success,,244.19
+garbagemule/MobArena,success,,62.76
+gaborpapp/AIam,success,,95.69
+garemoko/moodle-mod_tincanlaunch,success,,6.37
+fusor/fusor,success,,142.14
+gaearon/react,success,,142.77
+garbear/tyrquake,success,,125.10
+eclipse/sumo,checkout_failed,checkout: timeout after 900s,1311.50
+gentoo/eudev,success,,11.89
+ganeti/ganeti,success,,249.44
+gerbaudo/SusyntHlfv,success,,8.76
+georchestra/georchestra,success,,87.21
+gfxmonk/gnome-shell-scroll-workspaces,success,,4.99
+facebook/hhvm,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),730.27
+ethan-halsall/Simple-Kernel,clone_failed,error: RPC failed; curl 56 Recv failure: Connection reset by peer,868.21
+gleb812/pch2csd,success,,18.52
+gdh1995/vimium-plus,success,,259.86
+flatironinstitute/CaImAn,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),724.88
+gnutls/gnutls,clone_failed,error: RPC failed; curl 56 Recv failure: Connection reset by peer,152.51
+gemrb/gemrb,success,,400.07
+greenplum-db/gpdb,clone_failed,remote: Repository not found.,0.91
+gluster/glusterfs,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),236.43
+glensc/eventum,success,,259.35
+gxt/QEMU,clone_failed,remote: Repository not found.,0.89
+gem5/gem5,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),518.17
+haikuports/haikuporter,success,,21.21
+ghc/ghc,success,,370.87
+hansec/fortran-language-server,success,,7.14
+gpac/gpac,checkout_failed,checkout: error: RPC failed; curl 56 Recv failure: Connection reset by peer,193.55
+graik/rotmic,success,,191.31
+hasse69/rar2fs,success,,6.86
+friendlyarm/linux,clone_failed,timeout after 900s,900.02
+heldergg/webpymail,clone_failed,remote: Repository not found.,1.19
+hearsayit/HearsayRequireJSBundle,success,,4.71
+hauke/backports,success,,13.15
+herbstluftwm/herbstluftwm,success,,10.31
+garbear/xbmc,success,,633.21
+gforney/smv,success,,452.27
+hemberger/smr,success,,28.34
+huanghongxun/HMCL,success,,18.47
+gahansen/Albany,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),759.48
+hoburg/gpkit,success,,34.81
+hjmjohnson/RTK,success,,56.56
+hughsie/colord,success,,21.86
+icsharpcode/RefactoringEssentials,success,,8.52
+hhvm/user-documentation,success,,75.04
+icsharpcode/ILSpy,success,,22.42
+ierton/xkb-switch,success,,4.41
+imagej/imagej,checkout_failed,fetch: fatal: remote error: upload-pack: not our ref ac44c461ca138137248688d9f6d026e698b660ed,5.38
+hudmol/archivesspace,success,,79.89
+hjr/XCSoar,success,,128.42
+indradhanush/U1DB-ZeroMQ-Transport,success,,4.44
+icsharpcode/SharpDevelop,success,,80.87
+haproxy/haproxy,success,,185.88
+ismrmrd/ismrmrd,success,,3.33
+illwieckz/Daemon,success,,98.68
+itchio/itch,success,,79.10
+jackalope/jackalope,success,,10.88
+jainkuniya/zulip-mobile,success,,9.60
+indico/indico,success,,149.92
+jan-san/meteor-electrify,success,,3.47
+jakobnissen/vamb,success,,14.76
+inbitcoin/c-lightning,success,,236.66
+jantman/versionfinder,success,,2.77
+jandecaluwe/myhdl,success,,73.99
+jarek/electric2go,success,,32.63
+jbottel/TARS,success,,6.71
+jeffpferreira/tpm2-abrmd,clone_failed,remote: Repository not found.,0.83
+jcs/lobsters,success,,9.06
+jiangxincode/Emma,success,,3.56
+jeromewagener/Sammelbox,success,,9.34
+jipee37/la-bouee-corsaire,success,,10.99
+ilscipio/scipio-erp,success,,301.64
+jmikola/AutoLogin,success,,2.85
+jocelynthode/coachup,success,,13.03
+jmikola/mongo-php-driver,success,,15.86
+johnyf/tulip-control,clone_failed,remote: Repository not found.,0.91
+johanmalm/jgmenu,success,,3.88
+jomz/navigation_tags,success,,2.74
+jonasjberg/autonameow,clone_failed,remote: Repository not found.,0.84
+jondot/sneakers,success,,6.21
+joshdick/miniProxy,success,,3.41
+joschabach/micropsi2,success,,27.55
+jaamsim/jaamsim,success,,259.33
+joyent/libuv,success,,41.40
+h-kataria/manageiq,clone_failed,error: RPC failed; curl 56 Recv failure: Connection reset by peer,576.92
+jrmhaig/daemons,success,,3.62
+gromacs/gromacs,success,,589.83
+joyent/node,success,,28.13
+js216/CeNTREX,success,,4.21
+justinnhli/demograder,success,,3.05
+jzaefferer/jquery-validation,success,,5.48
+jymigeon/libarchive,success,,29.60
+jupyter/notebook,success,,53.56
+karma-runner/karma-mocha,success,,3.59
+halaszk/siyahkernel-sgs3,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),552.33
+karelzak/util-linux,success,,33.60
+kezabelle/django-haystackbrowser,success,,4.27
+kezabelle/django-shouty-templates,success,,2.84
+kinvarbuilder/kinvarbuilder,success,,4.31
+kiva/backbone.siren,success,,5.14
+konnectors/bookingdotcom,success,,3.71
+krisboit/protractor-xmlhttprequest-mock,success,,3.04
+knarflin/Linux-iptables-with-modified-NAT,success,,12.55
+krmpotic/snake,success,,2.97
+l1m5/hosts,success,,5.63
+instructure/canvas-lms,success,,408.05
+lazyfrosch/puppet-lint,clone_failed,remote: Repository not found.,0.82
+lddubeau/eslint-find-rules,success,,3.51
+gdamiand/cgal,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),1184.69
+leancloud/ticket,success,,13.21
+lattice/quda,success,,30.82
+leonardosnt/jar-string-editor,success,,3.35
+lemoncheesecake/lemoncheesecake,success,,9.68
+lesbg/lesson-1.0,success,,8.10
+liancheng/rose,success,,6.74
+lguzzon/Ractive,success,,66.67
+jwang36/edk2,success,,199.87
+libbun/libbun,success,,5.51
+lemenkov/rtplib,success,,108.39
+groeck/linux,clone_failed,timeout after 900s,900.01
+libreswan/libreswan,success,,90.93
+lincomatic/WS2812B,success,,2.80
+libMesh/libmesh,success,,189.63
+libav/libav,success,,172.16
+jirikuncar/invenio,success,,450.75
+ljharb/is-typed-array,success,,4.74
+lnls-dig/bpm-sw,success,,21.95
+locaweb/cassette,success,,3.88
+janelia-flyem/DVIDSparkServices,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),563.99
+jrl-umi3218/mc_rtc,success,,457.19
+lantw44/gsoc2013-evolution,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),410.20
+lumannnn/AudioRacer,success,,60.51
+luigirizzo/netmap,success,,125.33
+m-x-d/KMQuake2,success,,29.06
+kamenim/samba,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),546.61
+malarzm/mongodb-odm,success,,22.05
+mangband/mangband,success,,13.70
+iojs/io.js,clone_failed,timeout after 900s,900.01
+mapbox/carto,success,,8.49
+maas/maas,success,,92.75
+magnumripper/JohnTheRipper,success,,166.30
+luoq/julia,success,,229.93
+martintopholm/xping,success,,5.25
+masneyb/gftp,success,,12.84
+matortheeternal/mod-analyzer,success,,10.90
+matthewvasallo/angular-grid,success,,7.59
+markfasheh/ocfs2-tools,success,,71.92
+max1s/CRNSynthesis,success,,9.89
+maxogden/csv-write-stream,success,,4.07
+mbukatov/pylatest,success,,4.83
+mcellteam/mcell,success,,20.31
+mconf/mconf-web,success,,34.91
+lukasc-ubc/SiEPIC-Tools,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),494.47
+kees/linux,clone_failed,timeout after 900s,900.01
+medea61/xapp-cache,success,,2.99
+medusa-project/PearTree,success,,8.90
+mcvine/mcvine,success,,141.28
+mendix/m2ee-tools,success,,5.23
+meren/oligotyping,success,,12.34
+mesa3d/mesa,clone_failed,remote: Repository not found.,0.79
+meteor/meteor,success,,185.28
+meyerj/rtt_ros_integration,success,,3.98
+mapnik/mapnik,success,,581.56
+michaeljbrazell/amr-wind,success,,7.06
+libvirt/libvirt,clone_failed,timeout after 900s,900.04
+mikaell/chromograph,success,,3.62
+mikeseven/EDVR,success,,3.80
+linux-sunxi/linux-sunxi,clone_failed,timeout after 900s,900.01
+mc-server/MCServer,success,,436.42
+libretro/RetroArch,success,,989.88
+miniupnp/miniupnp,success,,7.11
+mirage/mini-os,success,,7.99
+linux4sam/linux-at91,clone_failed,timeout after 900s,900.02
+missirol/ParticleSwarmOptimization,clone_failed,remote: Repository not found.,2.25
+mkutlak/retrace-server,clone_failed,remote: Repository not found.,1.23
+minbrowser/min,success,,58.74
+llvm/llvm-project,clone_failed,timeout after 900s,900.01
+mongomapper/mongomapper,success,,15.27
+markcwill/obspy,success,,672.84
+mapillary/OpenSfM,checkout_failed,checkout: error: RPC failed; curl 56 Recv failure: Connection reset by peer,699.40
+mirror/qtbase,success,,86.18
+morkai/h5.modbus,success,,5.30
+miguel-negrao/supercollider,success,,144.79
+mongodb/mongo-php-driver,success,,76.62
+mono/libgdiplus,success,,58.26
+mruby/mruby,success,,62.03
+mirsal/vlc-mirsal,success,,212.10
+mozilla/fxa-content-server,success,,132.02
+mdboom/matplotlib,success,,548.22
+mtola/OpenSceneGraph,success,,60.53
+melissalinkert/bioformats,success,,526.80
+mono/monodevelop,success,,217.94
+mvantellingen/localshop,success,,18.06
+mtaylor/activemq-artemis,success,,146.08
+negge/tx_fun,clone_failed,remote: Repository not found.,1.17
+munkireport/munkireport-php,success,,125.90
+neilbrown/mdadm,success,,21.02
+nao-pon/elFinder,success,,69.67
+netoptimizer/network-testing,success,,4.48
+nickvandewiele/RMG-Java,success,,26.34
+nielsboogaard/home,success,,3.32
+mysociety/yournextmp-popit,success,,113.57
+nithinmurali/pygsheets,success,,6.48
+ncopa/openrc,success,,122.88
+noahwilliamsson/misc,success,,5.30
+nirizr/rematch,success,,37.00
+nextstrain/augur,success,,114.47
+mquinson/simgrid,success,,512.43
+nmathewson/Tor,success,,269.70
+mozilla/zamboni,success,,625.85
+nwoltman/node-mysql-plus,success,,4.53
+nolimits4web/Framework7,success,,291.54
+nydailynews/restaurant-guide,success,,13.85
+oVirt/vdsm,success,,132.20
+obormot/python-awis,success,,3.69
+microchip-ais/linux,clone_failed,timeout after 900s,900.02
+ming1/linux,clone_failed,timeout after 900s,900.02
+oVirt/ovirt-engine,success,,235.78
+nouiz/Theano,success,,491.90
+official-stockfish/Stockfish,success,,11.61
+okfn/dataexplorer,success,,8.26
+ocaml/ocaml,success,,107.00
+olebowle/STM32_IRMP,success,,2.94
+olt/mapproxy,success,,15.84
+nodejs/node,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),592.14
+mpeylo/cmpossl,clone_failed,timeout after 900s,900.07
+opbeat/opbeat-node,success,,8.18
+open-keychain/open-keychain,success,,39.97
+mongodb/mongo,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),1040.85
+openafs-contrib/openafs-robotest,success,,5.17
+neomanu/NeoKernel-MT6589-A116,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),719.39
+musescore/MuseScore,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),884.61
+nrz/ylikuutio,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),563.17
+ntpsec/gpsd,success,,532.84
+openego/eDisGo,success,,30.24
+openmb/stb-gui,success,,81.60
+openafs/openafs,success,,343.75
+obspy/obspy,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),711.62
+openstack/python-heatclient,success,,9.80
+omaciel/robottelo,success,,631.19
+openthread/openthread,success,,90.73
+olafdietsche/linux-accessfs,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),725.30
+odoo/odoo,clone_failed,timeout after 900s,900.02
+osTicket/osTicket-1.8,success,,103.19
+osmocom/libosmocore,success,,8.59
+osteele/assignment-dashboard,success,,3.79
+osxfuse/fuse,success,,8.03
+olivierayache/xuggle-xuggler,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),839.55
+openclonk/openclonk,success,,718.80
+pandemicsyn/statsdpy,success,,3.62
+openstack/cinder,clone_failed,error: 3851 bytes of body are still expected,565.05
+openmicroscopy/bioformats,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),640.12
+pantherb/setBfree,success,,56.19
+pantsbuild/pants,success,,60.83
+papandreou/impro,success,,24.04
+open-mpi/ompi,clone_failed,timeout after 900s,900.01
+patrickrgaffney/patdown,success,,11.55
+pat2003rat/DoughBoy,success,,16.15
+paulusmack/ppp,success,,6.35
+pdg137/bigdecimal,success,,3.97
+pebble-dev/rebble-auth-py,success,,5.10
+pcolby/bipolar,success,,12.34
+opentrack/opentrack,success,,330.77
+open-power-host-os/linux,clone_failed,timeout after 900s,900.01
+pfeyz/larc-tagset,success,,4.21
+ostreedev/ostree,success,,187.37
+pgjones/flake8-import-order,success,,3.77
+pgjones/hypercorn,success,,4.42
+pfi/pficommon,success,,29.12
+phillipberndt/pqiv,success,,7.54
+petkaantonov/bluebird,success,,69.97
+php1ic/inch,success,,10.32
+pantsbuild/pex,success,,146.47
+phppgadmin/phppgadmin,success,,12.09
+phoebe-project/phoebe2,success,,45.95
+piotr-rusin/yule,success,,3.39
+p-kalugin/wxWidgets,success,,237.40
+pkit/zerocloud,success,,8.29
+openbmc/qemu,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),986.51
+pdinc-oss/CipherShed,success,,144.96
+openstack/nova,success,,678.00
+petsc/petsc,success,,172.29
+plt/racket,success,,101.00
+potfit/potfit,success,,3.92
+polyglot-compiler/polyglot,success,,111.30
+praet/sluk,success,,3.18
+ppcoin/ppcoin,success,,60.18
+peircej/psychopy,success,,283.82
+postfixadmin/postfixadmin,success,,103.78
+phpservermon/phpservermon,success,,226.27
+poire-z/crengine,success,,166.36
+ps2dev/ps2sdk,success,,26.69
+pseyfert/tmva-mlp,success,,19.95
+pynbody/pynbody,success,,21.21
+opf/openproject,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),593.19
+palantir/atlasdb,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),471.77
+pyrocko/pyrocko,success,,21.06
+pybind/pybind11,success,,53.81
+pupil-labs/pupil,success,,113.00
+qTox/qTox,checkout_failed,checkout: error: RPC failed; curl 56 Recv failure: Connection reset by peer,99.61
+qstokkink/py-ipv8,success,,16.72
+qichenghua/OMCompiler,success,,119.26
+qt/qtlocation,success,,35.96
+qtfkwk/ratom,success,,3.37
+qtux/myo-raw,success,,4.32
+psychopy/psychopy,checkout_failed,checkout: error: RPC failed; curl 56 Recv failure: Connection reset by peer,289.06
+pytorch/fairseq,success,,242.85
+projectacrn/acrn-hypervisor,success,,349.02
+quisquous/cactbot,clone_failed,error: RPC failed; curl 56 Recv failure: Connection reset by peer,48.12
+radis/radis,success,,12.77
+pimtapath/kernel,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),562.17
+ranguba/rroonga,success,,13.98
+rauc/rauc,success,,21.33
+radare/radare2,success,,91.70
+reddit/reddit,success,,20.88
+retroj/conkeror,success,,78.72
+rezib/cloubed,success,,7.42
+plumed/plumed2,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),684.21
+rhansen/rpstir,success,,12.21
+rideconnection/lowdown,clone_failed,remote: Repository not found.,0.74
+rhinstaller/efivar,success,,25.49
+qwweee-cl/server,success,,269.01
+rmp2917/fpp,success,,14.91
+robertrueger/hVMC,success,,4.66
+rohgarg/dmtcp-1,success,,11.65
+ronf/asyncssh,success,,6.78
+qemu/qemu,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),550.05
+prestodb/presto,success,,664.49
+ridibooks/pdf.js,success,,123.73
+ros-planning/moveit,success,,22.72
+rrthomas/cw,success,,4.28
+rpm-software-management/dnf,success,,15.12
+ros/ros_comm,success,,15.92
+qt/qtbase,success,,474.94
+rtrlib/rtrlib,success,,7.87
+rubber/rubber,success,,5.68
+sCreami/booking,success,,3.43
+s3rvac/retdec-python,success,,5.35
+plieven/qemu,clone_failed,timeout after 900s,900.07
+sanjayankur31/nrn,success,,95.54
+python/cpython,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),815.25
+sass-eyeglass/broccoli-eyeglass,success,,5.74
+savoirfairelinux/ring-client-gnome,success,,7.62
+saltstack/salt,success,,236.11
+sbird/fake_spectra,success,,13.98
+scheduler-tools/rt-app,success,,3.39
+sclabs/projectile,success,,2.83
+scottyschup/aspera-events,success,,4.79
+pimcore/pimcore,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),1157.41
+root-mirror/root,clone_failed,error: RPC failed; curl 56 Recv failure: Connection reset by peer,383.98
+sbabic/swupdate,success,,122.78
+sebastiaanschool/sebastiaanschool-Android,success,,11.57
+rstudio/rstudio,success,,357.12
+sebhtml/biosal,success,,15.52
+sergev/pic32prog,success,,5.14
+sctplab/usrsctp,success,,103.89
+sergeii/swat4stats.com,success,,24.54
+sgelb/alot,clone_failed,remote: Repository not found.,0.76
+seuribe/uscheme,success,,4.01
+shalture/shalture,success,,11.60
+shamuproject/mavtables,success,,14.37
+saagarjha/glibc,success,,385.74
+shellphish/driller,success,,3.13
+shnhrrsn/laravel-assets,success,,3.57
+sheepdog/sheepdog,success,,10.43
+siemens/JMiniZinc,success,,10.75
+sdamashek/s2e,success,,87.02
+simon-knuth/scanner,success,,16.35
+simonsj/libssh,success,,6.65
+slesouef/PurBeurre_FoodFinder,success,,2.92
+sipi/dwmstatus,success,,3.18
+smargh/alfred-workflow,clone_failed,remote: Repository not found.,0.82
+servalproject/serval-dna,success,,59.16
+rth7680/qemu,checkout_failed,checkout: error: RPC failed; curl 92 HTTP/2 stream 3 was not closed cleanly: CANCEL (err 8),438.70
+snarfed/ownyourcheckin,success,,3.66
+snarfed/webmention-tools,success,,3.16
+slipstream/SlipStreamUI,success,,18.19
+sobotka/blender,clone_failed,remote: Repository not found.,0.83
+shogun-toolbox/shogun,success,,51.28
+somerandomdude/Frank,success,,3.82
+snarfed/bridgy,success,,41.14
+sosy-lab/java-smt,success,,21.65
+snipe/snipe-it,success,,63.41
+span/hackademic,success,,5.71
+solj/bcfg2,success,,75.58
+smrealms/smr,success,,105.76
+saschahauer/barebox,success,,401.37
+sphinx-doc/sphinx,success,,52.62
+sqlitebrowser/sqlitebrowser,success,,9.27
+radekp/linux-2.6,clone_failed,timeout after 900s,900.01
+rails/rails,clone_failed,timeout after 900s,900.01
+rjwysocki/linux-pm,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),760.07
+srsLTE/srsLTE,success,,40.40
+soundradix/JUCE,success,,164.68
+reactos/reactos,checkout_failed,checkout: timeout after 900s,1020.85
+ssilverman/arduino-esp32,success,,131.64
+scylladb/scylla-tools-java,success,,509.28
+silverstripe/silverstripe-framework,clone_failed,error: RPC failed; curl 56 Recv failure: Connection reset by peer,402.53
+spring-projects/spring-framework,success,,316.40
+sraboy/7kaa,success,,318.03
+strongloop/loopback-workspace,success,,9.94
+spring/spring,success,,364.41
+stereotype441/mesa,success,,125.36
+swordxx/swordxx,success,,7.23
+systemd-mailing-devs/systemd-mailing-list,clone_failed,remote: Repository not found.,0.70
+stestagg/uwsgi,success,,143.66
+stellar/stellar-core,success,,191.90
+systopia/de.systopia.signatures,success,,2.93
+sqlmapproject/sqlmap,success,,379.49
+t6x/reaver-wps-fork-t6x,success,,7.13
+t2y/python-study,success,,14.55
+tadeck/onetimepass,success,,3.43
+tacaswell/ophyd,success,,9.93
+teknoraver/ppp,clone_failed,remote: Repository not found.,0.85
+structr/structr,success,,59.26
+ta2edchimp/BattleReporter,success,,18.21
+ssahani/systemd,success,,340.97
+tensorpack/tensorpack,success,,24.09
+thinkaurelius/titan,success,,39.72
+tarantool/tarantool,success,,114.24
+systemd/systemd,success,,268.88
+stephengold/Maud,success,,439.24
+syntheticpp/lyx,success,,317.42
+the3dfxdude/7kaa,success,,294.63
+spring-projects/spring-boot,success,,778.29
+tmatsuya/linux-2.6,clone_failed,remote: Repository not found.,0.96
+tmmorin/bagpipe-bgp,success,,6.04
+tmpvar/sketchflat.js,success,,2.63
+starlightknight/jpcsp,success,,672.95
+timokau/cs-ranking,success,,76.73
+tobim/actor-framework,success,,10.57
+toladata/TolaActivity,success,,9.39
+topnotcher/gforce,success,,7.42
+thpatch/thcrap,success,,303.99
+tjcsl/ion,success,,70.57
+tos-kamiya/pager-with-less-like-key-binding,success,,2.58
+transientlunatic/HODLR,success,,11.32
+tomprince/gemrb,success,,40.19
+trenkel/collectd,clone_failed,remote: Repository not found.,0.85
+trevp/tlslite,success,,4.93
+tralamazza/mchck,success,,45.55
+translate/pootle,success,,37.68
+terminalmage/salt,clone_failed,error: RPC failed; curl 56 Recv failure: Connection reset by peer,425.84
+tswift242/tetris,success,,2.77
+tulip-control/tulip-control,success,,13.00
+tiborsimko/invenio,clone_failed,error: RPC failed; curl 56 Recv failure: Connection reset by peer,203.23
+txpmr001/frontend-nanodegree-feedreader,success,,3.48
+sosy-lab/sv-benchmarks,checkout_failed,checkout: timeout after 900s,946.67
+ualbertalib/DMPonline_v4,success,,145.36
+straccio/firmware,success,,769.57
+trezor/trezor-firmware,success,,297.84
+unity3d-jp/USDForUnity,success,,9.93
+unshiftio/tick-tock,success,,3.38
+unshiftio/url-parse,success,,4.55
+tianocore/edk2,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),638.05
+vanishedvan/lumberjack,success,,4.69
+tianocore/edk2-platforms,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),599.45
+uweschmitt/emzed2,success,,181.64
+vdrhtc/Measurement-automation,clone_failed,remote: Repository not found.,0.90
+umbraco/Umbraco-CMS,success,,250.00
+thedarkone/rails,clone_failed,timeout after 900s,900.01
+virtUOS/courseware,success,,42.27
+vjf/itowns,success,,12.71
+viiru-/pytrainer,success,,62.08
+vladimiroltean/sja1105-tool,success,,3.82
+vr100/github-api,success,,8.67
+vividus-framework/vividus,success,,67.06
+vsinitsyn/jailhouse,success,,17.31
+w3c/wptrunner,success,,4.37
+wanadev/PhotonUI,success,,12.68
+vyos/vyos-1x,success,,28.35
+washingtondc-emu/washingtondc,success,,15.16
+webnotes/erpnext,success,,31.38
+trini/u-boot,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),622.35
+webpack/webpack-dev-server,success,,23.86
+wei/pull,success,,7.47
+werthm/CaLib,success,,5.39
+volatilityfoundation/volatility,success,,128.71
+tobiatesan/scummvm,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),774.46
+wikimedia/operations-dumps,success,,9.11
+westlywright/ui,success,,92.36
+weiliu89/caffe,success,,170.69
+wikimedia/pywikibot,success,,47.37
+ucscGenomeBrowser/kent,success,,667.25
+torvalds/linux,clone_failed,timeout after 900s,900.01
+wincent/command-t,success,,19.40
+wmanley/stb-tester,success,,11.00
+wikimedia/pywikibot-core,success,,97.60
+trilinos/Trilinos,clone_failed,timeout after 900s,900.02
+tytso/ext4,clone_failed,timeout after 900s,900.02
+u-boot/u-boot,clone_failed,timeout after 900s,900.01
+wphicks/Writing3D,success,,41.26
+ximion/limba,success,,9.54
+wp-e-commerce/WP-e-Commerce,success,,100.46
+xiph/daala,success,,16.88
+wencongyang/xen,success,,402.88
+vatesfr/xen-orchestra,success,,625.12
+xycaleth/OpenJK,success,,39.49
+xiph/Icecast-Server,success,,108.54
+ynezz/coova-chilli,success,,19.81
+ypcrts/ptf,success,,11.91
+xzero/x0,success,,81.48
+yrutschle/sslh,success,,4.86
+ystreet/gst-plugins-gl,success,,28.77
+yuriykulikov/AlarmClock,success,,30.90
+zachahn/munge,success,,3.74
+wikimedia/parsoid,success,,485.30
+zenhack/iron-blogger2,success,,5.67
+vapier/qemu,clone_failed,timeout after 900s,900.02
+xbmc/xbmc,success,,323.78
+zhangn1985/ykdl,success,,19.38
+zhengqunkoo/taxibros,success,,6.72
+zizhengwu/Lumines-clone-Unity2D,success,,10.21
+wireshark/wireshark,success,,572.80
+zack-vii/mdsplus,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),432.99
+woodsts/linux-stable,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),729.49
+zstackio/zstack-utility,success,,359.62
+woocommerce/woocommerce,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),782.96
+xwiki/xwiki-platform,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),666.09
+williams-lu/odoo,clone_failed,timeout after 900s,900.01
+wesnoth/wesnoth,checkout_failed,checkout: timeout after 900s,1095.00
+zephyrproject-rtos/zephyr,success,,709.23
+yuwata/systemd,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),809.24
+yangdongsheng/linux,clone_failed,timeout after 900s,900.01
+zonque/linux,clone_failed,error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8),722.00
+zulip/zulip,success,,626.38

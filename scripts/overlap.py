@@ -3,51 +3,35 @@ from typing import Set, Tuple, List
 import seaborn as sb
 import matplotlib.pyplot as plt
 
-base_path = "out/"
+base_path = "data/out/"
 
-model_names = ["B-SZZ", "AG-SZZ", "L-SZZ", "R-SZZ", "MA-SZZ", "RA-SZZ*", "SZZ@PYD", "SZZ@UNL", "SZZ@OPN"]
+model_names = ["B-SZZ", "AG-SZZ", "L-SZZ", "MA-SZZ"]
 
 java_filter = ["RA-SZZ*", "SZZ@OPN"]
 
 model_list_all = ["bic_b_bugfix_commits_all.json",
                   "bic_ag_bugfix_commits_all.json",
                   "bic_l_bugfix_commits_all.json",
-                  "bic_r_bugfix_commits_all.json",
                   "bic_ma_bugfix_commits_all.json",
-                  "bic_ra_bugfix_commits_all.json",
-                  "bic_pd_bugfix_commits_all.json",
-                  "bic_unleashed_bugfix_commits_all.json",
-                  "bic_open_bugfix_commits_all.json"]
+                  ]
 
 model_list_all_issue_filter = ["bic_b_bugfix_commits_all.issue-filter.json",
                                "bic_ag_bugfix_commits_all.issue-filter.json",
                                "bic_l_bugfix_commits_all.issue-filter.json",
-                               "bic_r_bugfix_commits_all.issue-filter.json",
                                "bic_ma_bugfix_commits_all.issue-filter.json",
-                               "bic_ra_bugfix_commits_all.issue-filter.json",
-                               "bic_pd_bugfix_commits_all.issue-filter.json",
-                               "bic_unleashed_bugfix_commits_all.issue-filter.json",
-                               "bic_open_bugfix_commits_all.issue-filter.json"]
+                               ]
 
 model_list_issue_only = ["bic_b_bugfix_commits_issues_only.json",
                          "bic_ag_bugfix_commits_issues_only.json",
                          "bic_l_bugfix_commits_issues_only.json",
-                         "bic_r_bugfix_commits_issues_only.json",
                          "bic_ma_bugfix_commits_issues_only.json",
-                         "bic_ra_bugfix_commits_issues_only.json",
-                         "bic_pd_bugfix_commits_issues_only.json",
-                         "bic_unleashed_bugfix_commits_issues_only.json",
-                         "bic_open_bugfix_commits_issues_only.json"]
+                        ]
 
 model_list_issue_only_issue_filter = ["bic_b_bugfix_commits_issues_only.issue-filter.json",
                                       "bic_ag_bugfix_commits_issues_only.issue-filter.json",
                                       "bic_l_bugfix_commits_issues_only.issue-filter.json",
-                                      "bic_r_bugfix_commits_issues_only.issue-filter.json",
                                       "bic_ma_bugfix_commits_issues_only.issue-filter.json",
-                                      "bic_ra_bugfix_commits_issues_only.issue-filter.json",
-                                      "bic_pd_bugfix_commits_issues_only.issue-filter.json",
-                                      "bic_unleashed_bugfix_commits_issues_only.issue-filter.json",
-                                      "bic_open_bugfix_commits_issues_only.issue-filter.json"]
+                                      ]
 
 # Set one here
 # prefix = "all-"

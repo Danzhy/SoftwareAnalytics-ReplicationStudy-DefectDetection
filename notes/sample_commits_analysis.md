@@ -1,14 +1,13 @@
 # Exploration of 10 random entries from the oracle
 
 We pulled 10 random entries out of the 1,930 manually validated commits in
-`data/detailed-database/overall.json`
-
+`data/detailed-database/overall.json`.
 
 Sample is reproducible:
 
-run the random_commits.py file
+run the `random_commits.py` file
 
-This gives ids: 
+This gives ids:
 2336,
 375,
 79,
@@ -36,7 +35,7 @@ Each entry is a JSON object with:
   SZZ variants that filter on issue date; `best_scenario_issue_date` is a
   fallback heuristic and does **not** imply there is a real linked issue.
 
-## The five commits
+## Commit analysis
 
 **id 2336 — `andrewphorn/ClassiCube-Client` — fix `638ece305b`.** Fix message:
 "Another bug fix / Fixed a bug introduced in d37442c which was causing the
@@ -65,7 +64,32 @@ standalone renderer, fixing failing error handling tests after f6c07afe...";
 inducing commit is "Refine heap performance. Switch back to underscore since
 lodash does npm all wrong." Explicit SHA reference in the fix, looks legit.
 
+**id 933 — `analogdevicesinc/hdl` — fix `c4c87c7c7a`.** Fix message:
+"axi_ad9361: Fix the _hw.tcl script". The inducing commit `48d2c9d` is
+"axi_ad9361: Define a MIMO enabled parameter". No explicit SHA reference in the fix message.
+`issue_urls` empty.
+
+**id 844 — `NRGI/resourceprojects.org-frontend` — fix `d6b88831b7`.** Fix message:
+"Updates payment table on Country page". The inducing commit `652b20e` is
+"[#16] Makes data on payments show up". No explicit SHA reference in the fix message.
+`issue_urls` empty.
+
+**id 493 — `chadversary/piglit` — fix `7fe770369f`.** Fix message:
+"framework/shader_test.py: fix bug from commit 260f211d". The inducing commit `260f211` is
+"framework: Use shader_test.py to drive shader tests". The developer explicitly references the inducing SHA in the fix message.
+`issue_urls` empty.
+
+**id 2718 — `audacity/audacity` — fix `f9827a57a7`.** Fix message:
+"Minor fix for commands for shifting clips using the keyboard." The inducing commit `9da999d` is
+"Use OffsetTimeByPixels correctly...". No explicit SHA reference in the fix message.
+`issue_urls` empty.
+
+**id 338 — `Khan/analytics` — fix `d36ea213a8`.** Fix message:
+"Fix issues with video matrix generation." The inducing commit `0fac10a` is
+"Step 1 in import flow for video correlation matrix.". No explicit SHA reference in the fix message.
+`issue_urls` empty.
+
 ___
-None of the five so far have issues linked.
+Issue links in this sample (`issue_urls`): none (all entries have an empty `issue_urls` list).
 
-
+Overall, these commits are pretty good for oracle, and are easy to link in between. They show direct correlation between change and the consequent bugs that were introduced and later fixed.

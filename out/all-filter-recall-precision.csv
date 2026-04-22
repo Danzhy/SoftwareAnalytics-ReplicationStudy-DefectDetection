@@ -1,0 +1,5 @@
+model,recall,precision,fmeasure,correct (TP+FN),identified (TP+FP)
+B-SZZ,0.70,0.44,0.54,10,16
+AG-SZZ,0.70,0.54,0.61,10,13
+L-SZZ,0.60,0.75,0.67,10,8
+MA-SZZ,0.70,0.78,0.74,10,9

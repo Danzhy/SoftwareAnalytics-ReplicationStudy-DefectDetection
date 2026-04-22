@@ -1,0 +1,98 @@
+
+1. PySZZ v2 exits on any missing repository
+
+
+
+When the `repos_dir` argument is passed to PySZZ v2 (which is how the original
+replication expects it to be run, with `cloned/` as the repo root), the tool
+aborts the entire run the first time it cannot find a repository on disk.
+It does not skip, retry, or continue.
+
+It happens in the following file: tools/pyszz_v2-master/szz/core/abstract_szz.py, lines 41-48:
+
+    if not os.path.isdir(self._repository_path):
+        if repos_dir:
+            repo_dir = os.path.join(repos_dir, repo_full_name)
+            if os.path.isdir(repo_dir):
+                copytree(repo_dir, self._repository_path, symlinks=True)
+            else:
+                log.error(f'unable to find local repository path: {repo_dir}')
+                exit(-4)
+
+The per-commit driver loop in tools/pyszz_v2-master/main.py (lines 33-118)
+constructs an SZZ object for every bug-fix entry and does not wrap the call
+in try/except, so the `exit(-4)` above aborts the whole process.
+
+This is a problem on 2 levels
+
+a) we cannot use analyzed_projects_all.csv file, which contains more than 1000 unique repositories
+    in order to clone the repositories. The file with actual commits (bugfix_commits_all.json) has only ~951 unique repos.
+    Also the bugfix_commits_issues_only.json contains even less unique repos.
+
+b) some of the unique repositories are no longer clonable for various reasons: deleted repo, timeout, unable to checkout based 
+    on provided commit SHA number. When we tried cloning repositories, we produced the clone_log.csv file 
+    It contains the log of which repos were cloned successfully, and which failed with the specified reason.
+
+2. How we cloned repos (mitigation)
+
+a) scripts/repo_cloner.py attempts a partial (blob-less) clone of every referenced repo (blob-less because downloading actual files 
+    would be too slow) into cloned/<owner>/<repo>/ and checks it out to the
+    study's 'last_checkout' hash. Every attempt writes one row to logs/clone_log.csv with a terminal status.
+
+b) scripts/commits_filter.py reads that log and outputs logs/bugfix_commits_all_filtered.json (issues_only too),  
+   keeping only the entries whose repository was successfully prepared. The original input dataset JSON under
+   data/json-input-raw/ is not modified.
+
+c) PySZZ v2 is then invoked against the filtered JSON + cloned/, so the
+   exit(-4) path above is never hit.
+
+Consequence for the results:
+
+Original study evaluated 1,115 commit entries from the original dataset (bugfix_commits_all.json)
+Our reproduction is smaller than:
+1115 entries / 951 repos reported in the paper (same logic applies to issues_only).
+
+ Precision, Recall, and
+F-measure are computed on the surviving subset.
+
+3. Other issues
+
+
+srcml - couldn't install for a very long time. The website links that are supposed to allow to
+download pkg, tar.gz, other files do not work. So we had to manually download the source code repo
+and then manually build it in the system.
+
+
+4. Scope reduction to a small subset (10 bug-fix commits)
+
+reproduction is run on a 10-commit subset from filtered commit datasets (bugfix_commits_all_filtered, bugfix_commits_issues_only_filtered) 
+The reasons are
+resource-related:
+
+a) Disk space.
+
+   The blob-less partial clones produced by scripts/repo_cloner.py already
+   occupy ~48 GB in cloned/, and the remaining disk space is <50GB. However, a lot more space would
+   be needed probably. PySZZ v2 additionally fetches copies of files from target repos in order
+   to correctly run the szz algorithm. There is a high chance that if we run the SZZ analysis on, for example,
+   847 commits in the bugfix_commits_all_filtered.json, disk will be filled mid-run. This will abort all the progress.
+   The SZZ scripts do not store intermediary values. We would need to do this 4 times for both all commits, and issue only commits.
+
+b) Wall-clock time.
+
+   Cloning the 750 repositories already took ~4 hours. A single SZZ variant over the full filtered set 
+   is expected to take on the order of several hours, or maybe even a day. We expect that the full reproduction
+   would cost a multi-day compute budget that is not justifiable.
+
+
+c) Network sensitivity.
+
+   Because the clones are partial (`--filter=blob:none`), the SZZ algorithms fetch repor files during the runtime
+   If we take 847 commits, a single network error or a rate-limit can potentially crash the entire script, 
+   and no intermediary results would be stored. 
+
+
+Thus,
+We report Precision, Recall, F-score on the 10-commit subset only. The subset is different for
+all commit datasets and issues only commit dataset. Other than this, pipeline of original study
+is preserved.

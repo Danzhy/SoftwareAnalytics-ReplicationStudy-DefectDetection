@@ -1,0 +1,24 @@
+Added scripts 
+
+scripts/repo_cloner.py
+
+Clones all the GitHub repositories mentioned in the PySZZ input (we did data/json-input-raw/bugfix_commits_all.json) 
+and checks them out to the specific commit used in the original study. 
+The repos end up in the cloned/ folder. 
+It also logs what worked and what didn’t in a CSV file. 
+Uses partial cloning to save space and runs things in parallel, so it’s relatively fast.
+
+scripts/commits_filter.py
+Takes the original JSON commit datasets and filters it down to only the repositories that were actually cloned successfully. 
+This avoids crashes later when running PySZZ. 
+It writes the filtered version to a new file and doesn’t touch the original.
+
+scripts/make_subset.py
+Creates a smaller random subset of the filtered JSON commit dataset (example: bugfix_commits_issues_only_filtered.json)
+ so we don’t have to run everything on the full dataset. 
+The subset is reproducible (same seed = same result). We get 10 commit subset. 
+
+scripts/subset_repo_cloner.py
+Clones only the repositories from the subset JSON, but does it in a way that avoids issues with PySZZ (specifically the detached HEAD problem). 
+It re-clones each repo fresh and makes sure everything is checked out properly. 
+Also logs results similarly to the main cloner script.
